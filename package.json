@@ -1,0 +1,15 @@
+{
+  "name": "portspy",
+  "version": "0.2.0",
+  "type": "module",
+  "bin": {
+    "portspy": "./cli.tsx"
+  },
+  "dependencies": {
+    "ink": "^4.4.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
+  }
+}
