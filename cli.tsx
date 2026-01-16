@@ -129,7 +129,6 @@ async function getPortsViaLsof(): Promise<PortProc[]> {
   const tcpOut = await execText('lsof', [
     '-nP',
     '-iTCP',
-    '-sTCP:LISTEN',
     '-F',
     'pcPnLn',
   ]);
@@ -188,7 +187,7 @@ async function getPorts(): Promise<PortProc[]> {
   } catch {
     // Fall through to ss
   }
-  const ssOut = await execText('ss', ['-H', '-tunlp']);
+  const ssOut = await execText('ss', ['-H', '-tun']);
   return parseSs(ssOut);
 }
 
