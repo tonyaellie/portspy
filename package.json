@@ -1,6 +1,6 @@
 {
   "name": "portspy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool to monitor and manage network ports and processes.",
   "type": "module",
   "main": "cli.tsx",
