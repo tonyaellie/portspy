@@ -24,8 +24,8 @@
   "author": "Tonya <tonya@tokia.dev>",
   "license": "MIT",
   "dependencies": {
-    "react": "^18.3.1",
-    "ink": "^4.4.1"
+    "react": "^19.2.3",
+    "ink": "^6.6.0"
   },
   "devDependencies": {
     "react-devtools-core": "^7.0.1"

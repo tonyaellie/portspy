@@ -6,11 +6,30 @@ Designed for developers, system administrators, and anyone who needs quick insig
 
 ## Installation
 
-`portspy` requires [Bun](https://bun.sh/) to be installed on your system.
+### Via Precompiled Binary (Recommended)
 
-### Via Bun (Recommended)
+Download the latest precompiled binary for your system from the [Releases](https://github.com/tonyaellie/portspy/releases) page:
 
-To install `portspy` globally using Bun:
+- **Linux x86_64**: `portspy-bun-linux-x64`
+- **Linux ARM64**: `portspy-bun-linux-arm64`
+
+After downloading, make it executable and run it:
+
+```bash
+chmod +x portspy-bun-linux-x64
+./portspy-bun-linux-x64
+```
+
+Or move it to a location in your PATH for easy access:
+
+```bash
+sudo mv portspy-bun-linux-x64 /usr/local/bin/portspy
+portspy
+```
+
+### Via Bun
+
+`portspy` can also be installed globally using Bun if you have [Bun](https://bun.sh/) installed:
 
 ```bash
 bun install -g portspy
@@ -22,7 +41,7 @@ After installation, you can run `portspy` from anywhere:
 portspy
 ```
 
-### Manual Installation (for development or specific environments)
+### Manual Installation (for development)
 
 1.  Clone the repository:
     ```bash
