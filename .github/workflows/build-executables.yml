@@ -31,7 +31,7 @@ jobs:
       - name: Build ${{ matrix.target }}
         run: |
           OUTPUT_FILE="portspy-${{ matrix.target }}"
-          bun build src/cli.tsx --compile --outfile "$OUTPUT_FILE" --target ${{ matrix.target }}
+          bun build cli.tsx --compile --outfile "$OUTPUT_FILE" --target ${{ matrix.target }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
